@@ -22,3 +22,23 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+# print(calendar.weekheader(3))
+# print(calendar.firstweekday())
+# print(calendar.month(2019, 10))
+# print(calendar.calendar(2018))
+
+def printCalendar(file='12_cal.py', month=10, year=2019):
+  user_data = input('14_cal.py month [year]')
+  separate_fields = user_data.split()
+  print(separate_fields)
+  input_file = separate_fields[0]
+  input_month = separate_fields[1]
+  input_year = separate_fields[2]
+  user_calendar = calendar.month(int(input_year), int(input_month))
+  print(user_calendar)
+
+  # userCalendar = calendar.month(year, month)
+  # print(userCalendar)
+
+printCalendar()
