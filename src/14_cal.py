@@ -38,7 +38,7 @@ def printCalendar(file='12_cal.py', month=10, year=2019):
   user_calendar = calendar.month(int(input_year), int(input_month))
   print(user_calendar)
 
+
   # userCalendar = calendar.month(year, month)
   # print(userCalendar)
-
 printCalendar()
